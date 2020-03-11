@@ -12,9 +12,22 @@
 	<h1>Things I need to Do...</h1>
 
 	<table>
-		<tr></tr>
-
+		{% for item in items %}
+		<tr>
+			{% if item.done %}
+			<td><strike>{{ item.name }}</strike>
+			<td>
+			{% else %}
+			<td>{{ item.name }}
+			<td>
+            {% endif %}
+		</tr>
+        {% empty %}
+        <h2>You Have Nothing To Do....</h2>
+		{% endfor %}
 	</table>
+
+    <a href="add">Add an Item</a>
 
 </body>
 
