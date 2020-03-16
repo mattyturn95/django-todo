@@ -35,7 +35,10 @@ def edit_an_item(request, id):
         form = ItemForm(instance=item)
     return render(request, "item_form.html", {'form': form})
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bbe5d520c6080644111e9fb9020c518575fab097
 def toggle_status(request, id):
     item = get_object_or_404(Item, pk=id)
     item.done = not item.done
