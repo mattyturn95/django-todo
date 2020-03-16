@@ -27,7 +27,8 @@ SECRET_KEY = 'v=-ws)=pn3l^cq1s&+cb)@c4u+mu%pelo03+u%ir$c4m2mb76x'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-f0a1ac07-b7de-4d0e-9f09-a205c3900590.ws-eu01.gitpod.io', 'localhost']
+    '8000-f0a1ac07-b7de-4d0e-9f09-a205c3900590.ws-eu01.gitpod.io', 'localhost',
+    'simple-django-todo-frameworks.herokuapp.com']
 
 
 # Application definition
