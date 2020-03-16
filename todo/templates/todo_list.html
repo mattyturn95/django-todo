@@ -16,7 +16,6 @@
 		{% for item in items %}
 		<tr>
 			{% if item.done %}
-<<<<<<< HEAD
 			<td><strike>{{ item.name }}</strike></td>
 			{% else %}
 			<td>{{ item.name }}</td>
@@ -41,30 +40,6 @@
 	</table>
 
 	<a href="add"> Add an item</a>
-=======
-			<td><strike>{{ item.name }}</strike>
-			<td>
-				{% else %}
-			<td>{{ item.name }}
-			<td>
-				{% endif %}
-
-			<td>
-				<form method="POST" action="toggle/{{ item.id }}">{% csrf_token %}<input type="submit" value="Toggle"></form>
-			</td>
-
-			<td>
-				<form method="GET" action="edit/{{ item.id }}"><input type="submit" value="Edit"></form>
-			</td>
-		</tr>
-		{% empty %}
-		<h2>You Have Nothing To Do....</h2>
-		{% endfor %}
-	</table>
-
-	<a href="add">Add an Item</a>
-
->>>>>>> bbe5d520c6080644111e9fb9020c518575fab097
 </body>
 
 </html>
